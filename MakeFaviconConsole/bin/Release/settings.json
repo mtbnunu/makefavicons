@@ -1,0 +1,45 @@
+﻿{
+  "MinInputFileSize": 1200,
+
+  "MakeIco": true,
+  "IcoPathAndFileName": "/favicon.ico",
+
+  "SiteRelativeImageFolder": "/Content/img/logos",
+  "DefaultOutputFilename": "logo-{0}x{0}.png",
+
+  "AppleTouchIconLocation": "/",
+  "AppleTouchIconFilenames": [
+    {
+      "Id": "apple",
+      "Filename": "apple-touch-icon-{0}x{0}.png"
+    },
+    {
+      "Id": "appleprecomposed",
+      "Filename": "apple-touch-icon-{0}x{0}-precomposed.png"
+    }
+  ],
+
+  "OutputFileSizes": [ 16, 32, 48, 64, 128, 250, 256, 500, 512, 1024, 1200, 70, 150, 310, 144, 192 ],
+  "AppleTouchIconSizes": [ 57, 72, 76, 114, 120, 152 ],
+
+
+  "WindowsTileColor": "#ffffff",
+
+  "SiteName": "localhost",
+  "SiteUrl": "http://localhost",
+
+  "MakeConfigFiles": [
+    {
+      "Folder": "/",
+      "Filename": "browserconfig.xml"
+    },
+    {
+      "Folder": "/",
+      "Filename": "manifest.json"
+    },
+    {
+      "Folder": "/",
+      "Filename": "CopyPasteToHEAD.txt"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+﻿[[if true setting:MakeFavicon]]
+<link rel=icon type="image/x-icon" sizes="{{sizes:favicon}}" href="">
+[[endif]]
+<link rel=apple-touch-icon-precomposed href="{{path:apple-152}}">
+[[if exists path:manifest.json]]
+<link rel=manifest href="{{path:manifest.json}}">
+[[endif]]
+[[if exists path:browserconfig.xml]]
+<meta name=msapplication-config content="{{path:browserconfig.xml}}">
+[[endif]]
+<meta property="og:image" content="{{setting:SiteUrl}}{{path:1200}}">
