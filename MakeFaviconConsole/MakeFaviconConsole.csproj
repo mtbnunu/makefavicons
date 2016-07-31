@@ -54,10 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="bin\Debug\browserconfig.xml.template" />
-    <None Include="bin\Debug\manifest.json.template" />
-    <None Include="bin\Debug\settings.json" />
-    <None Include="bin\Debug\_HeadImagePartial.cshtml.template" />
     <None Include="bin\Release\browserconfig.xml.template" />
     <None Include="bin\Release\manifest.json.template" />
     <None Include="bin\Release\settings.json" />
@@ -69,6 +65,9 @@
       <Project>{40c9f8a3-ea6e-4bf2-9cd6-d1ca19b3368b}</Project>
       <Name>MakeFavicons</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
