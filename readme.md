@@ -4,6 +4,10 @@ Ready to be included in build process.
 
 MakeFavicons helps create different sizes of png image on the fly, for direct use on your website.
 
+-----
+### [Download Pre-Compiled](https://github.com/mtbnunu/makefavicons/tree/master/MakeFaviconConsole/bin/Release)
+-----
+
 <a name="featues" ></a>
 ## Features
 Given one large png file and some custom settings file, it can create:
@@ -16,7 +20,6 @@ Given one large png file and some custom settings file, it can create:
   - Header Partialview (.cshtml, .php, etc) for section of `<head>` that deals with these images
   - Any other custom config files you might need, dealing with these images.
   - Complete folder structure for all of above
-
 
 -----
 
