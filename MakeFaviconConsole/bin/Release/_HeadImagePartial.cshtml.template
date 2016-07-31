@@ -1,5 +1,5 @@
-﻿[[if true setting:MakeFavicon]]
-<link rel=icon type="image/x-icon" sizes="{{sizes:favicon}}" href="">
+﻿[[if true setting:MakeIco]]
+<link rel=icon type="image/x-icon" sizes="16x16 32x32 48x48 256x256" href="{{path:ico}}">
 [[endif]]
 <link rel=apple-touch-icon-precomposed href="{{path:apple-152}}">
 [[if exists path:manifest.json]]

@@ -55,9 +55,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="bin\Debug\browserconfig.xml.template" />
-    <None Include="bin\Debug\CopyPasteToHEAD.txt.template" />
     <None Include="bin\Debug\manifest.json.template" />
     <None Include="bin\Debug\settings.json" />
+    <None Include="bin\Debug\_HeadImagePartial.cshtml.template" />
+    <None Include="bin\Release\browserconfig.xml.template" />
+    <None Include="bin\Release\manifest.json.template" />
+    <None Include="bin\Release\settings.json" />
+    <None Include="bin\Release\_HeadImagePartial.cshtml.template" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

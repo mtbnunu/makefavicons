@@ -85,11 +85,19 @@ namespace MakeFavicons
             {
                 if (paths.ContainsKey("256"))
                 {
-                    var icopath = workingFolder + setting.IcoPathAndFileName.ToString();
-                    //icopath = Regex.Replace(icopath, @"\/+", @"\");
-                    var x = Directory.Exists(icopath);
-
-                    MakeIco.Make(workingFolder + paths["256"], icopath);
+                    try
+                    {
+                        var icopath = setting.IcoPathAndFileName.ToString();
+                        var fullicopath = workingFolder + icopath;
+                        MakeIco.Make(workingFolder + paths["256"], fullicopath);
+                        paths.Add("ico", icopath);
+                    }
+                    catch (Exception ex)
+                    {
+                        ColoredConsole.WriteLine("failed to create Ico file: " + ex.Message,
+                            ConsoleColor.Yellow);
+                        exitCode = -1;
+                    }
                 }
                 else
                 {
@@ -317,25 +325,6 @@ namespace MakeFavicons
                             throw new InvalidDataException("Template contains unknown setting " + m.Groups["val"].Value);
                         }
                         throw;
-                    }
-                }
-                else if (m.Groups["prefix"].Value.Equals("sizes"))
-                {
-                    if (m.Groups["val"].Value.Equals("favicon"))
-                    {
-                        try
-                        {
-                            var faviconSizes = new StringBuilder();
-                            foreach (var s in setting["FaviconSizes"])
-                            {
-                                faviconSizes.Append(s.ToString() + "x" + s.ToString() + " ");
-                            }
-                            replacement = faviconSizes.ToString().Trim();
-                        }
-                        catch (RuntimeBinderException ex)
-                        {
-                            throw new InvalidDataException("Setting does not contain FaviconSizes");
-                        }
                     }
                 }
                 if (replacement == null)

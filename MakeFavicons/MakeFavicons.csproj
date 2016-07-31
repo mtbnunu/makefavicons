@@ -51,12 +51,6 @@
     <Compile Include="PNGResizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="ExampleSettings\browserconfig.xml.template" />
-    <None Include="ExampleSettings\CopyPasteToHEAD.txt.template" />
-    <None Include="ExampleSettings\manifest.json.template" />
-    <None Include="ExampleSettings\settings.json" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

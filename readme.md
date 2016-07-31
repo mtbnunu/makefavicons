@@ -206,7 +206,7 @@ Each template might look something like following.
 #### _Head-ImagesSection.cshtml.template
 ```sh
 [[if true setting:MakeIco]]
-<link rel=icon type="image/x-icon" sizes="16x16 32x32 48x48 256x256" href="">
+<link rel=icon type="image/x-icon" sizes="16x16 32x32 48x48 256x256" href="{{path:ico}}">
 [[endif]]
 <link rel=apple-touch-icon-precomposed href="{{path:apple-152}}">
 [[if exists path:manifest.json]]
@@ -239,6 +239,7 @@ path | one of items in [OutputFileSizes array] | {{path:32}} | /Content/img/logo
 path | one of items in [AppleTouchIconFilenames].Id followed by a dash and one of items in [AppleTouchIconSizes] | {{path:apple-152}} | /apple-touch-icon-152x152.png
  | | | {{path:appleprecomposed-120}} | /apple-touch-icon-120x120-precomposed.png
  path | one of items in [MakeConfigFiles]->Filename | {{path:manifest.json}} | /manifest.json
+ path | ico | {{path:ico}} | /favicon.ico
  
 
  <a name="conditionals"></a>
@@ -319,6 +320,7 @@ will yield output:
 <a name="ouputHEAD"></a>
 ### in output _Head-ImagesSection.cshtml
 ```sh
+<link rel=icon type="image/x-icon" sizes="16x16 32x32 48x48 256x256" href="/favicon.ico">
 <link rel=apple-touch-icon-precomposed href="/apple-touch-icon-152x152.png">
 <link rel=manifest href="/manifest.json">
 <meta name=msapplication-config content="/browserconfig.xml">
@@ -326,7 +328,7 @@ will yield output:
 ```
 <a name="outputBrowserConfig"></a>
 ### in output browserconfig.xml
-```sh
+```
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
   <msapplication>
