@@ -7,6 +7,8 @@ MakeFavicons helps create different sizes of png image on the fly, for direct us
 -----
 ### [Download Pre-Compiled](https://github.com/mtbnunu/makefavicons/tree/master/MakeFaviconConsole/bin/Release)
 -----
+### [Setting Up Automated Build](https://github.com/mtbnunu/makefavicons/blob/master/Setup%20Guide/readme.md)
+-----
 
 <a name="featues" ></a>
 ## Features
