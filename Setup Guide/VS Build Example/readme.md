@@ -4,8 +4,8 @@
 
 
 ### In my project I created a folder called _FaviconMaker.
-<MAKEFAVIOCNFOLDER PNG>
-![](blob:chrome-extension%3A//cdneggiaafcmelgcaiihmhiagieomgfj/d69c5814-b2f6-454e-961c-8db001d900b2)
+
+![](_MakeFaviconFolder.PNG?raw=true)
 
 This folder contains settings, templates, and input png file called faviconsource.png.
 The faviconsource.png file is what I work with regarding logo now, not any generated files.
@@ -49,10 +49,11 @@ and I have specified the output folder of this to /Views/Shared, like below:
 
 **Go to Project - > Properties -> Build Events**
 
-![](blob:chrome-extension%3A//cdneggiaafcmelgcaiihmhiagieomgfj/9d6d1581-4e2b-470a-80c1-a0375883eb27)
+![](PreBuildCommandLine2.PNG?raw=true)
 
 **Click on Edit Pre-build->Macros to use variables for solution/project folders.**
-![](blob:chrome-extension%3A//cdneggiaafcmelgcaiihmhiagieomgfj/08d2e67e-b011-41e3-b78c-2150910d8eac)
+
+![](PreBuildCommandLine.PNG?raw=true)
 
 Here's my version.
 ```
@@ -65,19 +66,23 @@ D:\dev\makefavicons\MakeFavicons\MakeFaviconConsole\bin\Release\MakeFaviconConso
 ### Here's what I got:
 
 /Content/img/logos folder was my ***SiteRelativeImageFolder***
-![](blob:chrome-extension%3A//cdneggiaafcmelgcaiihmhiagieomgfj/355eca00-0cdd-4b4c-83fe-d976a9ddebc7)
+
+![](outputContent.PNG?raw=true)
 
 "/" was my ***AppleTouchIconLocation***
 This is a bit messy, but ill leave them there for now, since I don't want to write url-rewrite rules.
 
 Also notice the *browserconfig.xml* and manifest*.json* was created, and *favicon.ico*
-![](blob:chrome-extension%3A//cdneggiaafcmelgcaiihmhiagieomgfj/26435c20-88f2-4846-a171-6eae22ebf9b7)
+
+![](outputRoot.PNG?raw=true)
 
 In My Views/Shared, _HeadImagePartial was nicely created.
-![](blob:chrome-extension%3A//cdneggiaafcmelgcaiihmhiagieomgfj/d089b278-519d-492c-a51b-c2c7f2a94c97)
+
+![](outputShared.PNG?raw=true)
 
 Now I simply go to my _Layout.cshtml to link this PartialView.
-![](blob:chrome-extension%3A//cdneggiaafcmelgcaiihmhiagieomgfj/685254a1-ff03-4198-9982-47c35607ebcc)
+
+![](_layout%20example.PNG?raw=true)
 
 
 ### Now I dont' have to worry about any of these for rest of my project.
@@ -85,7 +90,10 @@ I can simply work with faviconsource.png and settings.json (and maybe template f
 
 > **NOTE **
 > When a new file was created as part of this build, it will not be included in your project by default.
+
 > (notice the dotted icons in above images)
+
 > Click on ***Show All Files *** in your Solution Explorer to see excluded files, right click on them and click **Add to Project**.
+
 > &nbsp;
 > Any **Updated** files will however, remain in your project.
