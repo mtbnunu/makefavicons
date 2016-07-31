@@ -8,6 +8,9 @@
 ![](_MakeFaviconFolder.PNG?raw=true)
 
 This folder contains settings, templates, and input png file called faviconsource.png.
+
+See [Main Documentation](https://github.com/mtbnunu/makefavicons/blob/master/readme.md) to correctly configure settings.json and templates.
+
 The faviconsource.png file is what I work with regarding logo now, not any generated files.
 
 My _HeadImagePartial.cshtml.template:
