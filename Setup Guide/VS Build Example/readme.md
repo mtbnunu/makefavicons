@@ -1,5 +1,6 @@
 # How to use as part of Visual Studio Build
 > The project in this guide is a Asp.Net5 App, with Razor Views.
+
 > Of course, you can use this with any project types, as long as you change the settings.json accordingly.
 
 
